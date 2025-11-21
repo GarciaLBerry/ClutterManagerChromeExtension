@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "ClutterManager",
+    "version": "1.0.0",
+    "description": "Removes empty search queries",
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "host_permissions": [
+        "*://*/*"
+    ],
+    "permissions": [
+        "activeTab",
+        "tabs"
+    ]
+}
