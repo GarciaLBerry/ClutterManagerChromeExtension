@@ -21,6 +21,7 @@ async function removeTabs() {
         console.log(allTabIds.length);
         if(allTabIds.length > 0) {
             const groupId = await chrome.tabs.group({tabIds: allTabIds});
+            chrome.tabGroups.update(groupId, {title: toGroupTabs[i].title});
         }
     }
 }
